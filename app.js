@@ -103,36 +103,44 @@ let dishes = [
     
 ]
 
-//Example function
-function findMexicanFood(){
-    let results = dishes.filter(function(el){
-        if(el.cuisine === "Mexican"){
-            return true;
-        }
-        else{
-            return false;
-        }})
+// Example function
+// function findMexicanFood(){
+//     let results = dishes.filter(function(el){
+//         if(el.cuisine === "Mexican"){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }})
 
-    //Debug tip: Place a Breakpoint on the return AFTER the filter, then hover over "results" to see results of filter without having to step through the whole thing!
+//     //Debug tip: Place a Breakpoint on the return AFTER the filter, then hover over "results" to see results of filter without having to step through the whole thing!
 
-    return results;
-}
+//     return results;
+// }
 
-let mexicanFood = findMexicanFood();
-console.log('Mexican Foods: ', mexicanFood)
+// let mexicanFood = findMexicanFood();
+// console.log('Mexican Foods: ', mexicanFood)
 
 
 
 //1. Create a function that will return all dishes with the cuisine type of "vegetarian"
 //Filter
 
-function problemOne(){
-
-    let results;
+function findVegetarianFood(){
+    let results = dishes.filter(function(el){
+        if(el.cuisine === "Vegetarian"){
+            return true;
+        }
+        else{
+            return false;
+        }})
 
 
     return results;
 }
+
+let vegetarianFood = findVegetarianFood();
+console.log('Vegetarian Foods: ', vegetarianFood)
 
 //2. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
