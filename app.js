@@ -223,6 +223,16 @@ console.log('Foods With Tomato and Cheese: ', tomatoAndCheeseFood)
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
 
+// 6a
+function cuisineNames(){
+    let results = dishes.map(function(el){
+        return el.cuisine;
+    })
+    return results;
+}
+
+console.log(cuisineNames());
+
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
 //Map 
 
