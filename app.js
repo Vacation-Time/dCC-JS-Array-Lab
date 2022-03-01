@@ -248,29 +248,34 @@ function addTypeAndDishName(){
 //8. Create a function that will append the cuisine type to the start of the dish's name. Then, return only the Vegetarian dish objects. So this function should return objects 11-13 with their names changed to "Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"
 //Map, Filter
 function nameVegetarianFood(){
-    let results = dishes.filter(function(el){
+    let vegetarianFoodName = dishes.filter(function(el){
         if(el.cuisine === "Vegetarian"){
             return true;
         }
         else{
             return false;
-        }})
-  
-        
-    return results;
-  }
-  
-  let vegetarianFoodName = nameVegetarianFood();
-//   console.log('Vegetarian Foods: ', vegetarianFoodName)
-
-function addTypeAndDishNameVegetarian(){
-    let dishFullNames = vegetarianFoodName.map(function(el){
-      return el.cuisine + ' ' + el.name;
+        }
     })
+    let dishFullNames = vegetarianFoodName.map(function(el){
+        return el.cuisine + ' ' + el.name;
+    })
+        
+        
     return dishFullNames;
   }
   
-  console.log(addTypeAndDishNameVegetarian());
+console.log('Vegetarian Dishes By Name: ', nameVegetarianFood(dishes));
+//   let vegetarianFoodName = nameVegetarianFood();
+// //   console.log('Vegetarian Foods: ', vegetarianFoodName)
+
+// function addTypeAndDishNameVegetarian(){
+//     let dishFullNames = vegetarianFoodName.map(function(el){
+//       return el.cuisine + ' ' + el.name;
+//     })
+//     return dishFullNames;
+//   }
+  
+//   console.log(addTypeAndDishNameVegetarian());
   
 
 
