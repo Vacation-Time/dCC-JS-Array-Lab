@@ -236,6 +236,15 @@ console.log(cuisineNames());
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
 //Map 
 
+function addTypeAndDishName(){
+    let dishFullNames = dishes.map(function(el){
+      return el.cuisine + ' ' + el.name;
+    })
+    return dishFullNames;
+  }
+  
+  console.log(addTypeAndDishName());
+
 //8. Create a function that will append the cuisine type to the start of the dish's name. Then, return only the Vegetarian dish objects. So this function should return objects 11-13 with their names changed to "Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"
 //Map, Filter
 
