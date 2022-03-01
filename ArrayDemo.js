@@ -41,3 +41,20 @@ function addLastName(arrayOfNames, lastName){
 
 console.log(addLastName(family, lastName));
 //['Stan Smith', 'Frank Smith', 'Lisa Smith', 'Bobby Smith']
+
+function findVegetarianFood(){
+  let results = dishes.filter(function(el){
+      if(el.cuisine === "Vegetarian"){
+          return true;
+      }
+      else{
+          return false;
+      }})
+
+
+  return results;
+}
+
+let vegetarianFood = findVegetarianFood();
+console.log('Vegetarian Foods: ', vegetarianFood)
+
